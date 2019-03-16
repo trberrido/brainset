@@ -1,0 +1,185 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, a:hover, abbr, button, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 		 0;
+	padding: 		 0;
+	border:			 none;
+	font-size:		 100%;
+	vertical-align:  baseline;
+	list-style-type: none;
+	outline: 		 0;
+	text-shadow:	 0 0 0 rgb ( 0, 0, 0, 0 );
+	font-weight:	 normal;
+	text-decoration: none;
+}
+
+/* endof reset */
+
+body {
+	
+	margin: 0;
+	font-family: "arial", sans-serif;
+	overflow: hidden;
+	cursor: pointer;
+	
+	.top_txt {
+	
+		#mentions{
+			
+		//	top: 2px;
+			display: none;
+			
+		}
+		
+		#focus{
+			
+			top: 90px;
+			left: 11px;
+			
+		}
+		
+		#menu{
+		
+			top: 0px;
+			left: 15px;
+		
+		}
+	
+	}
+	
+	.bottom_txt{
+	
+		#mentions {
+		
+			bottom: 2px;
+			
+		
+		}
+		
+		#focus{
+		
+			bottom: 16px;
+			left: 15px;
+		
+		}
+		
+		#menu{
+		
+			bottom: 110px;
+			left: 18px;
+		
+		}
+	
+	}
+	
+}
+
+#mentions {
+
+	position: absolute;
+	z-index: 5;
+	left: 16px;
+	font-size: 11px;
+
+}
+
+#focus {
+	
+//	background-color: rgb( 238, 238, 238 );
+	position : absolute;
+	
+	z-index: 9;
+	font-weight: bold;
+	color: rgb( 50, 50, 50 );
+//	color: rgb( 250, 250, 250 );
+	font-size: 75px;
+	letter-spacing: -0.05em;
+	opacity: 1;
+	
+	.light {
+	
+		font-weight: normal;
+	
+	}
+	
+}
+
+#menu {
+	
+	h1 {
+	
+		font-weight: bold;
+		
+		&:hover { color: black; }
+	
+	}
+	
+//	display: none;
+	cursor: pointer;
+	position: absolute;
+	z-index: 5;
+	
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 1em;
+	
+	color : rgb( 60, 60, 60 );
+	
+	ul {
+		
+		li {
+			
+		//	margin: 8px 0;
+			display: block;
+			width: 100%;
+			
+			
+			ul {
+			
+				margin-left: 10px;
+
+				li {
+	
+					ul {
+					
+						margin-left: 0;
+					
+						li {
+						
+							display: inline;
+
+						}
+					
+					}
+					
+				}				
+			
+			}
+			
+			span {
+			
+				color : rgb( 60, 60, 60 );
+			//	font-size: 21px;
+			//	line-height: 0.4em;
+			//	font-weight: bold;
+			//	background-color: rgba( 30, 30, 30, 0.5 );
+			
+			//	border-bottom: rgb( 70, 70, 70 ) 5px solid;
+			//	border-top: rgb( 70, 70, 70 ) 5px solid;
+				
+				&:hover {
+				
+					color: black;
+			//		text-decoration: underline;
+			//		border-top: rgb( 10, 10, 10 ) 5px solid;
+			//		border-bottom: rgb( 10, 10, 10 ) 5px solid;
+				
+				}
+			
+			}
+
+		
+		}
+		
+	}
+}
